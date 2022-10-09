@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="date_picker_dialog_in_android">Date Picker Dialog</string>
+    <string name="date">Date</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="time_picker_dialog">Time Picker Dialog</string>
+    <string name="time">Time</string>
+    <string name="pick_time">Pick Time</string>
+</resources>
