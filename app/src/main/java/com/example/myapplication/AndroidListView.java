@@ -23,7 +23,7 @@ public class AndroidListView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main4);
 
         listView = findViewById(R.id.list);
         ArrayAdapter<String> arr;

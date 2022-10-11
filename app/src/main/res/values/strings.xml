@@ -6,4 +6,9 @@
     <string name="time_picker_dialog">Time Picker Dialog</string>
     <string name="time">Time</string>
     <string name="pick_time">Pick Time</string>
+    <string name="image_view">image view</string>
+    <string name="open_next_page">open next page</string>
+    <string name="agree">agree</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="hi_your_detailed_notification_view_goes_here">Hi, Your Detailed notification view goes here....</string>
 </resources>

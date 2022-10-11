@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,15 +15,17 @@ public class AndroidDatePicker extends AppCompatActivity {
 
     private Button pickDateBtn;
     private TextView selectedDateTV;
+    private Button openNextScrenn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_date_picker);
 
         pickDateBtn = findViewById(R.id.idBtnPickDate);
         selectedDateTV = findViewById(R.id.idTVSelectedDate);
-;
+        openNextScrenn = findViewById(R.id.nextScreenBtn);
+
         pickDateBtn.setOnClickListener((View.OnClickListener) v -> {
             final Calendar c = Calendar.getInstance();
 
@@ -37,5 +40,14 @@ public class AndroidDatePicker extends AppCompatActivity {
                     year, month, day);
             datePickerDialog.show();
         });
+
+        openNextScrenn.setOnClickListener(v -> {
+            openNextScreen();
+        });
+    }
+
+    public void openNextScreen() {
+        Intent intent = new Intent(this, AndroidSpinner.class);
+        startActivity(intent);
     }
 }
